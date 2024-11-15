@@ -32,9 +32,9 @@ export const BottomTabNavigator = () => {
           }}
           
     >
-      <Tab.Screen name="Inicio" options={{ title:'Inicio', tabBarIcon: ({color}) =>  (<Ionicon name='home' size={25}/>) }} component={Tab1Screen} />
-      <Tab.Screen name="Buscar" options={{ title:'Buscar', tabBarIcon: ({color}) =>  (<Ionicon name='search' size={25}/>) }} component={TopTabsNavigator} />
-      <Tab.Screen name="Carro" options={{ title:'Carro', tabBarIcon: ({color}) =>  (<Ionicon name='cart' size={25}/>) }} component={StackNavigator} />
+      <Tab.Screen name="Inicio" options={{ title:'Inicio', tabBarIcon: ({color}) =>  (<Ionicon name='home' size={25} color={color}/>) }} component={Tab1Screen} />
+      <Tab.Screen name="Buscar" options={{ title:'Buscar', tabBarIcon: ({color}) =>  (<Ionicon name='search' size={25} color={color}/>) }} component={TopTabsNavigator} />
+      <Tab.Screen name="Carro" options={{ title:'Carro', tabBarIcon: ({color}) =>  (<Ionicon name='cart' size={25} color={color}/>) }} component={StackNavigator} />
     </Tab.Navigator>
   );
 }
