@@ -1,7 +1,8 @@
 import React from 'react'
 import { Text, View } from 'react-native'
 import HamburgerMenu from '../../components/shared/HamburgerMenu'
-import Icon from 'react-native-vector-icons/Ionicons';
+import Ionicon from '../../components/shared/Ionicon'
+
 
 
 const Tab1Screen = () => {
@@ -11,7 +12,7 @@ const Tab1Screen = () => {
     <View>
       <HamburgerMenu/>
         <Text>Tab1 Screen</Text>
-        <Icon name="rocket-outline" size={100} />
+        {/* <Ionicon name='rocket-outline' size={100} color='blue'/> */}
     </View>
   )
 }

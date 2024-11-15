@@ -6,6 +6,7 @@ import { globalColors } from '../theme/theme';
 import { Text } from 'react-native';
 import { TopTabsNavigator } from './TopTabsNavigator';
 import { StackNavigator } from './StackNavigator';
+import Ionicon from '../components/shared/Ionicon';
 
 const Tab = createBottomTabNavigator();
 
@@ -31,9 +32,9 @@ export const BottomTabNavigator = () => {
           }}
           
     >
-      <Tab.Screen name="Tab1" options={{ title:'Tab1', tabBarIcon: ({color}) =>  (<Text style={{ color: color }}>1</Text>) }} component={Tab1Screen} />
-      <Tab.Screen name="Tab2" options={{ title:'Tab2', tabBarIcon: ({color}) =>  (<Text style={{ color: color }}>2</Text>) }} component={TopTabsNavigator} />
-      <Tab.Screen name="Tab3" options={{ title:'Tab3', tabBarIcon: ({color}) =>  (<Text style={{ color: color }}>3</Text>) }} component={StackNavigator} />
+      <Tab.Screen name="Inicio" options={{ title:'Inicio', tabBarIcon: ({color}) =>  (<Ionicon name='home' size={25}/>) }} component={Tab1Screen} />
+      <Tab.Screen name="Buscar" options={{ title:'Buscar', tabBarIcon: ({color}) =>  (<Ionicon name='search' size={25}/>) }} component={TopTabsNavigator} />
+      <Tab.Screen name="Carro" options={{ title:'Carro', tabBarIcon: ({color}) =>  (<Ionicon name='cart' size={25}/>) }} component={StackNavigator} />
     </Tab.Navigator>
   );
 }
